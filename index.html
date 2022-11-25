@@ -18,126 +18,230 @@
         background-color: #333;
         color: whitesmoke;
       }
+      table,
+      tr,
+      th,
+      td,
+      caption {
+        border: 1px solid #eee;
+        font-family: "Courier New", Courier, monospace;
+        border-collapse: collapse;
+        padding: 0.5rem;
+      }
     </style>
   </head>
   <body>
-    <h1>My Goal for the year</h1>
+    <header>
+      <h1>My Goals for the year</h1>
+
+      <!-- <hr /> -->
+
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li>
+            <a href="#html" style="color: #000">Learning HTML</a>
+          </li>
+          <li>
+            <a href="#vacation" style="color: #000">Planning a Vacation</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <hr />
 
-    <nav>
-      <ul>
-        <li>
-          <a href="#html" style="color: #000">Learning HTML</a>
-        </li>
-        <li>
-          <a href="#vacation" style="color: #000">Planning a Vacation</a>
-        </li>
-      </ul>
-    </nav>
-
-    <hr />
-
-    <section id="html">
-      <h2>I am ready to learn html</h2>
-      <p>This is my first web page.</p>
-      <img
-        src="img/pexels-cottonbro-studio-8388229.jpg"
-        alt="Image one"
-        title="Image one"
-      />
-      <figure>
-        <figcaption>An Example of HTML5 code</figcaption>
-        <p>
-          <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
-        </p>
-      </figure>
-
-      <h3>My daily schedule</h3>
-      <p>Let me tell you how I:</p>
-      <ol>
-        <!-- <br /> -->
-        <li>&nbsp;&nbsp;&nbsp;...I learn more about web dev.</li>
-        <!-- <br /> -->
-        <li>&nbsp;&nbsp;&nbsp;...I plan out my schedule</li>
-        <!-- <br /> -->
-        <li>
-          &nbsp;&nbsp;&nbsp;...I use resources from
-          <abbr title="Mozilla Developer Network"
-            ><a href="https://developer.mozilla.org/en-US/" style="color: #000"
-              >MDN</a
-            ></abbr
-          >
-        </li>
-      </ol>
-    </section>
-
-    <hr />
-
-    <!-- <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> -->
-
-    <section id="vacation">
-      <h2>I am also planning a vacation</h2>
-      <p>I have been working hard and <em>really need a gateway</em>.</p>
-      <p>I live in <abbr title="Egypt">Eg</abbr> so I want visit a beach.</p>
-
-      <h3>Place I'd like to visit</h3>
-      <ul>
-        <li>
-          <p>I've heard good things about the Sharm Elshekh.</p>
+    <main>
+      <article id="html">
+        <h2>I am ready to learn html</h2>
+        <p>This is my first web page.</p>
+        <section>
+          <h3>HTML5</h3>
+          <img
+            src="img/pexels-cottonbro-studio-8388229.jpg"
+            alt="Image one"
+            title="Image one"
+          />
           <figure>
-            <!-- loading='lazy': help me load the page faster -->
-            <img
-              src="img/pexels-thorsten-technoman-338504.jpg"
-              alt="Vacation"
-              title="I want to visit thus place"
-              width="500"
-              loading="lazy"
-            />
-            <figcaption>My favorite place I want to visit.</figcaption>
+            <figcaption>An Example of HTML5 code</figcaption>
+            <p>
+              <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+            </p>
           </figure>
-        </li>
+        </section>
+        <section>
+          <h3>My daily schedule</h3>
+          <p>Let me tell you how I:</p>
+          <ol>
+            <!-- <br /> -->
+            <li>&nbsp;&nbsp;&nbsp;...I learn more about web dev.</li>
+            <!-- <br /> -->
+            <li>&nbsp;&nbsp;&nbsp;...I plan out my schedule</li>
+            <!-- <br /> -->
+            <li>
+              &nbsp;&nbsp;&nbsp;...I use resources from
+              <abbr title="Mozilla Developer Network"
+                ><a
+                  href="https://developer.mozilla.org/en-US/"
+                  style="color: #000"
+                  >MDN</a
+                ></abbr
+              >
+            </li>
+          </ol>
+          <aside>
+            <details>
+              <summary>
+                Guess the <mark>numbers of hours</mark> I code per a day
+              </summary>
+              <p>
+                I start at <time datetime="08:00">8am</time> and I write code
+                for <time datetime="PT3H">3 hours</time> every morning.
+              </p>
+            </details>
+          </aside>
 
-        <li>
-          <p>I've heard good things about going here:</p>
-          <address>
-            Cool island
-            <br />
-            intersting
-          </address>
-          <figure>
-            <img
-              src="img/pexels-enrique-hoyos-14437082.jpg"
-              alt="My addreaa"
-              width="500"
-              title="It's 5 o'clock somewhere!"
-              loading="lazy"
-            />
-            <figcaption>My Amazing Address</figcaption>
-          </figure>
-        </li>
-      </ul>
+          <br />
 
-      <!-- TODO: Add more places -->
-      <h3>Place I want to avoid</h3>
-      <!-- <p>Anywhere cold. <strong>No way!</strong></p> -->
-      <dl>
-        <dt>Cairo</dt>
-        <dd>This is very <strong>tricky</strong></dd>
+          <table>
+            <caption>
+              My Daily Schedual
+            </caption>
+            <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Morning</th>
+                <td>
+                  <time datetime="08:00">8am</time>-<time datetime="11:00"
+                    >11am</time
+                  >
+                </td>
+                <td>Write Code</td>
+              </tr>
+              <tr>
+                <th scope="row">Break</th>
+                <td>
+                  <time datetime="11:00">11am</time>-<time datetime="12:00"
+                    >12pm</time
+                  >
+                </td>
+                <td>Eat Lunch</td>
+              </tr>
+              <tr>
+                <th scope="row">Afternoon</th>
+                <td>
+                  <time datetime="12:00">12pm</time>-<time datetime="17:00"
+                    >5pm</time
+                  >
+                </td>
+                <td>Study for other courses</td>
+              </tr>
+              <tr>
+                <th scope="row">Evening</th>
+                <td rowspan="2">All Other Times</td>
+                <td>Free Time</td>
+              </tr>
+              <tr>
+                <th scope="row">Night</th>
+                <td>Sleep</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">
+                  And that's what I do every day, 5 days a week. Just eat ,
+                  Sleep, Code ..and recharge!
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+      </article>
 
-        <dt>Sinaa</dt>
-        <dd>This not <strong>safty</strong></dd>
+      <hr />
 
-        <dt>Aswan</dt>
-        <dd>This is very <strong>Hot</strong></dd>
-      </dl>
-    </section>
+      <!-- <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> -->
+
+      <article id="vacation">
+        <h2>I am also planning a vacation</h2>
+        <p>I have been working hard and <em>really need a gateway</em>.</p>
+        <p>I live in <abbr title="Egypt">Eg</abbr> so I want visit a beach.</p>
+
+        <section>
+          <h3>Place I'd like to visit</h3>
+          <ul>
+            <li>
+              <p>I've heard good things about the Sharm Elshekh.</p>
+              <figure>
+                <!-- loading='lazy': help me load the page faster -->
+                <img
+                  src="img/pexels-thorsten-technoman-338504.jpg"
+                  alt="Vacation"
+                  title="I want to visit thus place"
+                  width="500"
+                  loading="lazy"
+                />
+                <figcaption>My favorite place I want to visit.</figcaption>
+              </figure>
+            </li>
+
+            <li>
+              <p>I've heard good things about going here:</p>
+              <address>
+                Cool island
+                <br />
+                intersting
+              </address>
+              <figure>
+                <img
+                  src="img/pexels-enrique-hoyos-14437082.jpg"
+                  alt="My addreaa"
+                  width="500"
+                  title="It's 5 o'clock somewhere!"
+                  loading="lazy"
+                />
+                <figcaption>My Amazing Address</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+
+        <!-- TODO: Add more places -->
+        <!-- Does not have meaning div and span -->
+        <!-- <div></div> -->
+        <!-- <span></span> -->
+        <section>
+          <h3>Place I want to avoid</h3>
+          <!-- <p>Anywhere cold. <strong>No way!</strong></p> -->
+          <dl>
+            <dt>Cairo</dt>
+            <dd>This is very <strong>tricky</strong></dd>
+
+            <dt>Sinaa</dt>
+            <dd>This not <strong>safty</strong></dd>
+
+            <dt>Aswan</dt>
+            <dd>This is very <strong>Hot</strong></dd>
+          </dl>
+        </section>
+      </article>
+    </main>
 
     <hr />
-    &lt;&lt;&lt; &copy;
-    <a href="about.html" style="color: #000">Ahmed Eid</a> &gt;&gt;&gt;
-    <p>
-      <a href="#" style="color: #000">Back to Top</a>
-    </p>
+
+    <footer>
+      <p>
+        &lt;&lt;&lt; &copy;
+        <a href="about.html" style="color: #000">Ahmed Eid</a> &gt;&gt;&gt;
+      </p>
+      <p>
+        <a href="#" style="color: #000">Back to Top</a>
+      </p>
+    </footer>
   </body>
 </html>
